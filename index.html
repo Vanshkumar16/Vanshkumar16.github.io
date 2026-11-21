@@ -3,1024 +3,798 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vansh Kumar | AI/ML Engineer & Systems Builder</title>
-  <meta name="description" content="Portfolio of Vansh Kumar, an AI/ML Engineer and Computer Science undergraduate building intelligent systems, exploring LLMs, agentic AI, machine learning, and AI infrastructure." />
-  <meta name="keywords" content="AI/ML Engineer, Machine Learning, Deep Learning, LLM Engineering, Agentic AI, RAG Systems, AI Infrastructure, Python, PyTorch, Systems Builder" />
+  <title>Vansh Kumar - AI/ML Engineer & Systems Builder</title>
+  <meta name="description" content="Portfolio of Vansh Kumar — AI/ML Engineer, Systems Builder & Computer Science undergraduate at JSS Noida. Smart India Hackathon 2025 Winner." />
 
   <!-- OpenGraph Metadata -->
-  <meta property="og:title" content="Vansh Kumar | AI/ML Engineer & Systems Builder" />
-  <meta property="og:description" content="Building intelligent systems. Exploring the future of AI. Creator of AgentFlow, APEX, and Smart India Hackathon 2025 Winner." />
+  <meta property="og:title" content="Vansh Kumar - AI/ML Engineer & Systems Builder" />
+  <meta property="og:description" content="Building intelligent systems, local LLM agent runtimes, and real-time backend workstations. Smart India Hackathon 2025 Winner." />
   <meta property="og:image" content="https://github.com/Vanshkumar16.png" />
   <meta property="og:url" content="https://vanshkumar16.github.io/" />
   <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:card" content="summary" />
   <meta name="twitter:creator" content="@k11107_kumar" />
-  <meta name="twitter:site" content="@k11107_kumar" />
 
-  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <!-- Google Font: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-  <!-- Stylesheet -->
+  <!-- External Stylesheet -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Direct Embedded Stylesheet (Guarantees 100% Reliable Rendering on GitHub Pages) -->
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      font-size: 16px;
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: #ffffff !important;
+      color: #000000 !important;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+      font-size: 0.875rem;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+      color: #000000 !important;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 2.5rem 1rem;
+    }
+    @media (min-width: 768px) {
+      .container {
+        padding: 4rem 1.5rem;
+      }
+    }
+    .content > * + * {
+      margin-top: 2rem;
+    }
+    .section h2 {
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+      color: #000000;
+    }
+    .section p {
+      color: #000000;
+      line-height: 1.6;
+    }
+    .header-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1.5rem;
+    }
+    .header-info {
+      flex: 1;
+    }
+    .header-name {
+      font-size: 1.875rem;
+      line-height: 1.2;
+      margin-bottom: 0.375rem;
+      font-weight: 700;
+    }
+    .header-bio {
+      color: rgba(0, 0, 0, 0.8);
+      font-size: 0.875rem;
+      line-height: 1.45;
+      margin-bottom: 0.5rem;
+    }
+    .header-location {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      color: #6b7280;
+      font-size: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+    .header-location svg {
+      width: 14px;
+      height: 14px;
+      stroke: currentColor;
+    }
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      align-items: center;
+    }
+    .contact-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2rem;
+      height: 2rem;
+      border: 1px solid #e5e7eb;
+      border-radius: 0.375rem;
+      background-color: #ffffff;
+      color: #374151;
+      text-decoration: none;
+      transition: all 0.15s ease;
+    }
+    .contact-btn svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+    .contact-btn:hover {
+      background-color: #f3f4f6;
+      border-color: #d1d5db;
+      color: #000000;
+      text-decoration: none;
+    }
+    .avatar-wrapper {
+      flex-shrink: 0;
+    }
+    .avatar {
+      width: 120px !important;
+      height: 120px !important;
+      max-width: 120px !important;
+      max-height: 120px !important;
+      border-radius: 0.5rem !important;
+      object-fit: cover !important;
+      background-color: #f1f5f9;
+      border: 1px solid #e5e7eb;
+      display: block;
+    }
+    .work-item, .edu-item, .hackathon-item {
+      margin-bottom: 1.5rem;
+    }
+    .work-item:last-child, .edu-item:last-child, .hackathon-item:last-child {
+      margin-bottom: 0;
+    }
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 0.5rem;
+    }
+    .item-title {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    .item-date {
+      color: #6b7280;
+      font-size: 0.75rem;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+    .item-role {
+      color: #4b5563;
+      font-size: 0.8125rem;
+      margin-top: 0.125rem;
+      margin-bottom: 0.375rem;
+    }
+    .item-desc {
+      color: #1f2937;
+      font-size: 0.84375rem;
+      line-height: 1.5;
+      margin-bottom: 0.375rem;
+    }
+    .item-bullets {
+      padding-left: 1.25rem;
+      margin-top: 0.25rem;
+      margin-bottom: 0.5rem;
+      color: #374151;
+      font-size: 0.8125rem;
+      line-height: 1.5;
+    }
+    .item-bullets li {
+      margin-bottom: 0.25rem;
+    }
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.375rem;
+      margin-top: 0.5rem;
+    }
+    .tag {
+      background-color: #f1f5f9;
+      color: #475569;
+      font-size: 0.6875rem;
+      padding: 0.125rem 0.375rem;
+      border-radius: 0.25rem;
+      line-height: 1.25;
+      font-family: inherit;
+      white-space: nowrap;
+    }
+    .badge-award {
+      background-color: #fef3c7;
+      color: #92400e;
+      font-size: 0.6875rem;
+      padding: 0.125rem 0.4rem;
+      border-radius: 0.25rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .badge-status {
+      background-color: #ecfdf5;
+      color: #047857;
+      font-size: 0.6875rem;
+      padding: 0.125rem 0.4rem;
+      border-radius: 0.25rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .skill-group {
+      margin-bottom: 0.875rem;
+    }
+    .skill-group:last-child {
+      margin-bottom: 0;
+    }
+    .skill-title {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: #000000;
+      margin-bottom: 0.25rem;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+    }
+    @media (min-width: 640px) {
+      .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    .project-card {
+      border: 1px solid #e5e7eb;
+      border-radius: 0.5rem;
+      padding: 0.75rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: #ffffff;
+      transition: border-color 0.15s ease;
+    }
+    .project-card:hover {
+      border-color: #9ca3af;
+    }
+    .project-title-row {
+      display: flex;
+      align-items: center;
+      gap: 0.375rem;
+      margin-bottom: 0.25rem;
+    }
+    .project-title-row h3 {
+      font-size: 0.9375rem;
+      font-weight: 600;
+    }
+    .project-title-row a {
+      color: #000000;
+      text-decoration: none;
+    }
+    .project-title-row a:hover {
+      text-decoration: underline;
+    }
+    .active-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: #10b981;
+      display: inline-block;
+      flex-shrink: 0;
+    }
+    .project-desc {
+      font-size: 0.75rem;
+      color: #4b5563;
+      line-height: 1.45;
+      margin-bottom: 0.5rem;
+    }
+    @media print {
+      body {
+        font-size: 8.5pt;
+        line-height: 1.35;
+      }
+      .container {
+        max-width: 100%;
+        padding: 0;
+      }
+      .content > * + * {
+        margin-top: 1rem;
+      }
+      .contact-btn, .avatar-wrapper, .active-dot {
+        display: none !important;
+      }
+      .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .project-card, .work-item, .edu-item, .hackathon-item {
+        page-break-inside: avoid;
+      }
+    }
+  </style>
 </head>
 <body>
-
-  <!-- =================================================================
-       Sticky Minimal Navigation Bar
-       ================================================================= -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="#" class="nav-logo">
-        <span class="nav-logo-dot"></span>
-        <span>vansh.kumar</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#achievements">Achievements</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <a href="mailto:vk1114211249@gmail.com" class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">
-        Get in Touch
-      </a>
-    </div>
-  </nav>
-
   <main class="container">
     <div class="content">
 
       <!-- =================================================================
-           01. Hero Section — The First 5 Seconds
+           1. Header / Hero Section
            ================================================================= -->
-      <section class="hero-section" id="hero">
-        <div class="hero-header-row">
-          <div class="hero-text">
-            <div class="eyebrow">
-              <span>●</span> AI/ML ENGINEER • SYSTEMS BUILDER • RESEARCH ENTHUSIAST
-            </div>
-            <h1 class="hero-name">Vansh Kumar</h1>
-            <p class="hero-main-heading">
-              Building intelligent systems. <span>Exploring the future of AI.</span>
-            </p>
-            <p class="hero-bio">
-              I don't just experiment with AI. I build systems around it. Focused on designing practical AI applications, experimenting with machine learning and large language models, and engineering reliable systems that connect models, data, and software into meaningful products.
-            </p>
-
-            <div class="hero-meta">
-              <span class="status-pill">
-                <span class="status-indicator-dot"></span>
-                Building. Researching. Experimenting.
-              </span>
-              <span>📍 Noida, Uttar Pradesh, India</span>
-            </div>
-
-            <!-- Call to Actions -->
-            <div class="hero-cta">
-              <a href="#projects" class="btn btn-primary">Explore My Work</a>
-              <a href="mailto:vk1114211249@gmail.com" class="btn btn-secondary">Let's Connect</a>
-              
-              <!-- Social Icons -->
-              <div class="social-icon-row">
-                <a href="https://github.com/Vanshkumar16" target="_blank" rel="noreferrer" class="icon-btn" title="GitHub (@Vanshkumar16)">
-                  <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                </a>
-                <a href="https://linkedin.com/in/vansh-kumar-idkwtfusee143" target="_blank" rel="noreferrer" class="icon-btn" title="LinkedIn">
-                  <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                </a>
-                <a href="https://x.com/k11107_kumar" target="_blank" rel="noreferrer" class="icon-btn" title="X / Twitter (@k11107_kumar)">
-                  <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                </a>
-                <a href="https://codeforces.com/profile/vk04" target="_blank" rel="noreferrer" class="icon-btn" title="Codeforces (vk04 - Specialist 1453)">
-                  <svg viewBox="0 0 24 24"><path d="M4.5 7.5A1.5 1.5 0 0 1 6 9v10.5A1.5 1.5 0 0 1 4.5 21h-3A1.5 1.5 0 0 1 0 19.5V9a1.5 1.5 0 0 1 1.5-1.5h3zm7.5-4.5A1.5 1.5 0 0 1 13.5 4.5v15a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 7.5 19.5V4.5A1.5 1.5 0 0 1 9 3h3zm7.5 9a1.5 1.5 0 0 1 1.5 1.5v6a1.5 1.5 0 0 1-1.5 1.5h-3a1.5 1.5 0 0 1-1.5-1.5v-6a1.5 1.5 0 0 1 1.5-1.5h3z"/></svg>
-                </a>
-                <a href="https://leetcode.com/u/Vansh_kumar16" target="_blank" rel="noreferrer" class="icon-btn" title="LeetCode (Vansh_kumar16 - 250+ Solved)">
-                  <svg viewBox="0 0 24 24"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .666-1.794l3.85-4.122 5.405-5.787a1.378 1.378 0 0 0-.96-2.316zM15.42 8.784a1.38 1.38 0 0 0-1.38 1.38v2.76a1.38 1.38 0 0 0 2.76 0v-2.76a1.38 1.38 0 0 0-1.38-1.38zm-3.68 0a1.38 1.38 0 0 0-1.38 1.38v2.76a1.38 1.38 0 0 0 2.76 0v-2.76a1.38 1.38 0 0 0-1.38-1.38zm7.36 0a1.38 1.38 0 0 0-1.38 1.38v2.76a1.38 1.38 0 0 0 2.76 0v-2.76a1.38 1.38 0 0 0-1.38-1.38z"/></svg>
-                </a>
-              </div>
-            </div>
-
-            <!-- Floating Technical Labels -->
-            <div class="tech-cloud">
-              <span class="tech-pill">Python</span>
-              <span class="tech-pill">PyTorch</span>
-              <span class="tech-pill">LLMs</span>
-              <span class="tech-pill">RAG</span>
-              <span class="tech-pill">LangGraph</span>
-              <span class="tech-pill">AI Agents</span>
-              <span class="tech-pill">AI Infrastructure</span>
-              <span class="tech-pill">FastAPI</span>
-              <span class="tech-pill">Docker</span>
-            </div>
-          </div>
-
-          <div class="avatar-wrapper">
-            <img
-              src="https://github.com/Vanshkumar16.png"
-              onerror="this.onerror=null; this.src='assets/profile.webp';"
-              alt="Vansh Kumar"
-              class="hero-avatar"
-            />
-          </div>
-        </div>
-
-        <!-- Live Technical Terminal Component -->
-        <div class="terminal-window">
-          <div class="terminal-header">
-            <span class="terminal-dot dot-red"></span>
-            <span class="terminal-dot dot-yellow"></span>
-            <span class="terminal-dot dot-green"></span>
-            <span class="terminal-title">vansh@workstation: ~/workspace/ai-systems</span>
-          </div>
-          <div class="terminal-body">
-            <div><span class="t-prompt">$</span> <span class="t-cmd">whoami</span></div>
-            <div class="t-output">Vansh Kumar — AI/ML Engineer & Systems Builder</div>
-            <div><span class="t-prompt">$</span> <span class="t-cmd">current_interests</span></div>
-            <div class="t-output t-green">
-              &gt; Machine Learning &nbsp;&gt; Deep Learning &nbsp;&gt; LLM Systems<br/>
-              &gt; Agentic Workflows &nbsp;&gt; AI Research &nbsp;&nbsp;&gt; Quantitative Systems
-            </div>
-            <div><span class="t-prompt">$</span> <span class="t-cmd">status</span></div>
-            <div class="t-output t-amber">Building. Researching. Experimenting.</div>
-          </div>
-        </div>
-      </section>
-
-      <!-- =================================================================
-           02. Quick Profile / At a Glance
-           ================================================================= -->
-      <section class="section" id="profile">
-        <div class="eyebrow">QUICK PROFILE</div>
-        <h2 class="section-title">At a Glance</h2>
-        <div class="profile-grid">
-          <div class="profile-card">
-            <span class="profile-label">Identity & Degree</span>
-            <span class="profile-val">Vansh Kumar</span>
-            <span class="profile-sub">B.Tech, Computer Science & Engineering</span>
-          </div>
-          <div class="profile-card">
-            <span class="profile-label">Institution & Batch</span>
-            <span class="profile-val">JSS Academy of Technical Education</span>
-            <span class="profile-sub">Noida, UP, India · Expected 2028 (CGPA 8.0/10)</span>
-          </div>
-          <div class="profile-card">
-            <span class="profile-label">Primary Domain & Focus</span>
-            <span class="profile-val">Artificial Intelligence & Machine Learning</span>
-            <span class="profile-sub">AI Engineering & Systems Building</span>
-          </div>
-          <div class="profile-card">
-            <span class="profile-label">Research & Core Interests</span>
-            <span class="profile-val">LLMs, Agentic AI & ML Systems</span>
-            <span class="profile-sub">Quantitative Research & Model Evaluation</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- =================================================================
-           03. About Me — Beyond the Code
-           ================================================================= -->
-      <section class="section" id="about">
-        <div class="eyebrow">ABOUT ME</div>
-        <h2 class="section-title">Beyond the Code</h2>
-        <p class="section-subtitle">
-          I'm Vansh Kumar, a Computer Science and Engineering undergraduate at JSS Academy of Technical Education, Noida, India.
-        </p>
-
-        <p style="color: var(--text-secondary); margin-bottom: 1rem;">
-          My primary focus is Artificial Intelligence and Machine Learning, with a growing interest in intelligent systems, large language models, agentic architectures, and AI infrastructure. I enjoy understanding how things work beneath the surface — from the mathematical foundations of machine learning algorithms to the architecture of modern transformer-based models and the engineering behind reliable AI applications.
-        </p>
-
-        <p style="color: var(--text-secondary); margin-bottom: 1rem;">
-          Over time, my interests have expanded from conventional machine learning and predictive modeling to LLM applications, Retrieval-Augmented Generation, multi-agent systems, real-time data pipelines, and intelligent automation. I believe learning becomes meaningful when theory meets implementation. That's why I spend time experimenting, building projects, participating in technical competitions, exploring research papers, and contributing to practical engineering work.
-        </p>
-
-        <!-- Engineering Philosophy Quote -->
-        <div class="philosophy-box">
-          <p class="philosophy-quote">
-            "I believe meaningful engineering is not about using the latest technology just because it exists. It is about understanding the problem, choosing the right approach, building something reliable, and measuring whether it actually works."
+      <header class="header-section">
+        <div class="header-info">
+          <h1 class="header-name">Vansh Kumar</h1>
+          <p class="header-bio">
+            AI/ML Engineer & Systems Builder building local LLM agent runtimes, real-time workstations, and intelligent systems.
           </p>
-          <div class="philosophy-author">— Engineering Philosophy</div>
+          <div class="header-location">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+            Noida, Uttar Pradesh, India
+          </div>
+
+          <!-- Social Buttons (32x32px) -->
+          <div class="contact-links">
+            <!-- Email -->
+            <a href="mailto:vk1114211249@gmail.com" class="contact-btn" title="Email (vk1114211249@gmail.com)">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/Vanshkumar16" target="_blank" rel="noreferrer" class="contact-btn" title="GitHub (@Vanshkumar16)">
+              <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/vansh-kumar-idkwtfusee143" target="_blank" rel="noreferrer" class="contact-btn" title="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+
+            <!-- X / Twitter -->
+            <a href="https://x.com/k11107_kumar" target="_blank" rel="noreferrer" class="contact-btn" title="X / Twitter (@k11107_kumar)">
+              <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+
+            <!-- Codeforces -->
+            <a href="https://codeforces.com/profile/vk04" target="_blank" rel="noreferrer" class="contact-btn" title="Codeforces (vk04 - Specialist 1453)">
+              <svg viewBox="0 0 24 24"><path d="M4.5 7.5A1.5 1.5 0 0 1 6 9v10.5A1.5 1.5 0 0 1 4.5 21h-3A1.5 1.5 0 0 1 0 19.5V9a1.5 1.5 0 0 1 1.5-1.5h3zm7.5-4.5A1.5 1.5 0 0 1 13.5 4.5v15a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 7.5 19.5V4.5A1.5 1.5 0 0 1 9 3h3zm7.5 9a1.5 1.5 0 0 1 1.5 1.5v6a1.5 1.5 0 0 1-1.5 1.5h-3a1.5 1.5 0 0 1-1.5-1.5v-6a1.5 1.5 0 0 1 1.5-1.5h3z"/></svg>
+            </a>
+
+            <!-- LeetCode -->
+            <a href="https://leetcode.com/u/Vansh_kumar16" target="_blank" rel="noreferrer" class="contact-btn" title="LeetCode (Vansh_kumar16 - 250+ Solved)">
+              <svg viewBox="0 0 24 24"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .666-1.794l3.85-4.122 5.405-5.787a1.378 1.378 0 0 0-.96-2.316zM15.42 8.784a1.38 1.38 0 0 0-1.38 1.38v2.76a1.38 1.38 0 0 0 2.76 0v-2.76a1.38 1.38 0 0 0-1.38-1.38zm-3.68 0a1.38 1.38 0 0 0-1.38 1.38v2.76a1.38 1.38 0 0 0 2.76 0v-2.76a1.38 1.38 0 0 0-1.38-1.38zm7.36 0a1.38 1.38 0 0 0-1.38 1.38v2.76a1.38 1.38 0 0 0 2.76 0v-2.76a1.38 1.38 0 0 0-1.38-1.38z"/></svg>
+            </a>
+          </div>
         </div>
 
-        <!-- Principles Grid -->
-        <div class="principles-grid">
-          <div class="principle-card">
-            <div class="principle-title">01. Understand Before Implementing</div>
-            <p class="principle-desc">A strong implementation begins with a clear understanding of the problem and its constraints.</p>
-          </div>
-          <div class="principle-card">
-            <div class="principle-title">02. Measure Before Claiming</div>
-            <p class="principle-desc">Model performance, efficiency, and reliability should be supported by meaningful evaluation.</p>
-          </div>
-          <div class="principle-card">
-            <div class="principle-title">03. Build Beyond the Prototype</div>
-            <p class="principle-desc">A useful system requires thoughtful architecture, validation, error handling, and maintainability.</p>
-          </div>
-          <div class="principle-card">
-            <div class="principle-title">04. Learn Through Implementation</div>
-            <p class="principle-desc">Research papers, experimentation, code reviews, and real-world problem-solving are all part of the learning process.</p>
-          </div>
+        <!-- 120x120px Avatar -->
+        <div class="avatar-wrapper">
+          <img
+            src="https://github.com/Vanshkumar16.png"
+            onerror="this.onerror=null; this.src='assets/profile.webp';"
+            alt="Vansh Kumar"
+            class="avatar"
+            width="120"
+            height="120"
+            style="width: 120px; height: 120px; border-radius: 0.5rem; object-fit: cover; display: block;"
+          />
         </div>
-      </section>
+      </header>
 
       <!-- =================================================================
-           04. Technical Skills — Organized by Depth
+           2. About Section
            ================================================================= -->
-      <section class="section" id="skills">
-        <div class="eyebrow">TECHNICAL CAPABILITIES</div>
-        <h2 class="section-title">Technical Skills</h2>
-        <p class="section-subtitle">
-          Organized by engineering depth, practical implementation experience, and active research exploration.
+      <section class="section">
+        <h2>About</h2>
+        <p>
+          B.Tech Computer Science undergraduate (CGPA 8.0/10; 2028) at JSS Academy of Technical Education, Noida, building applied AI systems and high-throughput backend services. Specialized in local LLM coding-agent runtimes, agentic RAG workflows, and real-time market data streaming workstations. Winner of Smart India Hackathon 2025 (Krishi Netra AI) and active competitive programmer (Codeforces Specialist, peak 1453; 250+ LeetCode problems solved). Focused on reproducible evaluation, failure-aware agent recovery, modular architecture, and reliable systems.
         </p>
-
-        <div class="skills-container">
-
-          <!-- Cat 1: Machine Learning & Data Science -->
-          <div class="skill-category-card">
-            <div class="skill-cat-header">
-              <span class="skill-cat-title">Machine Learning & Data Science</span>
-              <span class="skill-cat-badge">Core Strength</span>
-            </div>
-            <div class="tag-list">
-              <span class="tag tag-accent">Python</span>
-              <span class="tag">NumPy</span>
-              <span class="tag">Pandas</span>
-              <span class="tag tag-accent">Scikit-learn</span>
-              <span class="tag">LightGBM</span>
-              <span class="tag">XGBoost</span>
-              <span class="tag">CatBoost</span>
-              <span class="tag">Random Forest</span>
-              <span class="tag">Feature Engineering</span>
-              <span class="tag">Optuna</span>
-              <span class="tag">Hyperparameter Optimization</span>
-              <span class="tag">Time-Based CV</span>
-              <span class="tag">Ensemble Learning</span>
-              <span class="tag">SMOTE</span>
-            </div>
-          </div>
-
-          <!-- Cat 2: Deep Learning -->
-          <div class="skill-category-card">
-            <div class="skill-cat-header">
-              <span class="skill-cat-title">Deep Learning</span>
-              <span class="skill-cat-badge">Neural Architectures</span>
-            </div>
-            <div class="tag-list">
-              <span class="tag tag-accent">PyTorch</span>
-              <span class="tag">TensorFlow</span>
-              <span class="tag">Neural Networks (ANN)</span>
-              <span class="tag">Embeddings</span>
-              <span class="tag">Model Training</span>
-              <span class="tag">Optimization</span>
-              <span class="tag">Transformer Fundamentals</span>
-              <span class="tag">Attention Mechanisms</span>
-            </div>
-          </div>
-
-          <!-- Cat 3: Generative AI & LLM Engineering -->
-          <div class="skill-category-card">
-            <div class="skill-cat-header">
-              <span class="skill-cat-title">Generative AI & LLM Engineering</span>
-              <span class="skill-cat-badge">Active Systems</span>
-            </div>
-            <div class="tag-list">
-              <span class="tag tag-accent">Hugging Face</span>
-              <span class="tag">Transformers</span>
-              <span class="tag tag-accent">Ollama</span>
-              <span class="tag">Gemma (gemma4:e2b)</span>
-              <span class="tag">Llama Architectures</span>
-              <span class="tag">Prompt Engineering</span>
-              <span class="tag tag-accent">RAG Systems</span>
-              <span class="tag">FAISS</span>
-              <span class="tag">Semantic Search</span>
-              <span class="tag">Vector Similarity</span>
-              <span class="tag">Structured JSON Output Validation</span>
-            </div>
-          </div>
-
-          <!-- Cat 4: Agentic AI & Automation -->
-          <div class="skill-category-card">
-            <div class="skill-cat-header">
-              <span class="skill-cat-title">Agentic AI & Workflow Automation</span>
-              <span class="skill-cat-badge">Orchestration</span>
-            </div>
-            <div class="tag-list">
-              <span class="tag tag-accent">LangGraph</span>
-              <span class="tag tag-accent">LangChain</span>
-              <span class="tag">Agent Workflows</span>
-              <span class="tag">Tool Calling</span>
-              <span class="tag">Multi-Agent Systems</span>
-              <span class="tag">Failure-Guided Recovery</span>
-              <span class="tag">Budgeted Execution</span>
-              <span class="tag">n8n</span>
-              <span class="tag">API Integration</span>
-            </div>
-          </div>
-
-          <!-- Cat 5: Backend & Systems Engineering -->
-          <div class="skill-category-card">
-            <div class="skill-cat-header">
-              <span class="skill-cat-title">Backend & Systems Engineering</span>
-              <span class="skill-cat-badge">Reliable Services</span>
-            </div>
-            <div class="tag-list">
-              <span class="tag tag-accent">FastAPI</span>
-              <span class="tag">Node.js</span>
-              <span class="tag">Express.js</span>
-              <span class="tag tag-accent">WebSockets</span>
-              <span class="tag">REST APIs</span>
-              <span class="tag">RabbitMQ</span>
-              <span class="tag">Streamlit</span>
-              <span class="tag">PostgreSQL</span>
-              <span class="tag">Prisma ORM</span>
-              <span class="tag">SQLite</span>
-              <span class="tag">Redis Pub/Sub</span>
-            </div>
-          </div>
-
-          <!-- Cat 6: Data Engineering & Infrastructure -->
-          <div class="skill-category-card">
-            <div class="skill-cat-header">
-              <span class="skill-cat-title">Data Engineering & Infrastructure</span>
-              <span class="skill-cat-badge">Pipelines & Deployment</span>
-            </div>
-            <div class="tag-list">
-              <span class="tag">Streaming Data Pipelines</span>
-              <span class="tag">Pathway</span>
-              <span class="tag">Data Ingestion</span>
-              <span class="tag">Real-Time Indexing</span>
-              <span class="tag tag-accent">Docker</span>
-              <span class="tag">Nginx</span>
-              <span class="tag">Git</span>
-              <span class="tag">GitHub Actions CI/CD</span>
-            </div>
-          </div>
-
-          <!-- Cat 7: Programming & Problem Solving -->
-          <div class="skill-category-card">
-            <div class="skill-cat-header">
-              <span class="skill-cat-title">Programming & Algorithmic Problem Solving</span>
-              <span class="skill-cat-badge">C++ & Python</span>
-            </div>
-            <div class="tag-list">
-              <span class="tag tag-accent">C++ (Competitive Programming)</span>
-              <span class="tag tag-accent">Python</span>
-              <span class="tag">TypeScript</span>
-              <span class="tag">JavaScript</span>
-              <span class="tag">SQL</span>
-              <span class="tag">Data Structures & Algorithms</span>
-              <span class="tag">Binary Search</span>
-              <span class="tag">Two Pointers</span>
-              <span class="tag">Sliding Window</span>
-              <span class="tag">Complexity Analysis</span>
-            </div>
-          </div>
-
-        </div>
       </section>
 
       <!-- =================================================================
-           05. Featured Projects — The Centerpiece Case Studies
+           3. Work Experience Section
            ================================================================= -->
-      <section class="section" id="projects">
-        <div class="eyebrow">CASE STUDIES</div>
-        <h2 class="section-title">Featured Projects</h2>
-        <p class="section-subtitle">
-          In-depth technical case studies showing problem statements, architectures, engineering trade-offs, and measurable evaluation.
-        </p>
+      <section class="section">
+        <h2>Work Experience</h2>
 
-        <div class="projects-container">
-
-          <!-- PROJECT 01: AGENTFLOW -->
-          <article class="case-study-card">
-            <div class="case-study-header">
-              <div>
-                <div class="case-study-cat">Agentic AI • LLM Systems • AI Engineering</div>
-                <h3 class="case-study-title">
-                  <span class="active-pulse-dot"></span>
-                  <a href="https://github.com/Vanshkumar16/Agentfllow" target="_blank" rel="noreferrer">
-                    AgentFlow — Budget-Aware Recovery for Local Coding Agents
-                  </a>
-                </h3>
-              </div>
-              <span class="badge-green">Evaluated v2</span>
-            </div>
-
-            <p class="case-study-desc">
-              Engineering intelligent agent workflows through structured orchestration, local LLM execution, and system-level failure recovery. Designed to address non-deterministic agent failures, token runaways, and incomplete code-repair outputs under local model constraints.
-            </p>
-
-            <!-- Architecture Diagram Flow -->
-            <div class="arch-box">
-              <div class="arch-label">System Architecture Flow</div>
-              <div class="arch-flow">
-                <span class="arch-step">User Task Input</span>
-                <span class="arch-arrow">→</span>
-                <span class="arch-step">Task Interpretation</span>
-                <span class="arch-arrow">→</span>
-                <span class="arch-step">Workflow Orchestration</span>
-                <span class="arch-arrow">→</span>
-                <span class="arch-step">Agent / Tool Execution (Ollama/Gemma)</span>
-                <span class="arch-arrow">→</span>
-                <span class="arch-step">JSON/Schema Result Validation</span>
-                <span class="arch-arrow">→</span>
-                <span class="arch-step">Final Verified Output</span>
-              </div>
-            </div>
-
-            <ul class="case-study-bullets">
-              <li><strong>Failure-Guided Recovery:</strong> Engineered a local code-repair agent supporting single-shot, fixed-retry, and failure-guided policies with strict schema validation, incomplete-response rejection, and repeat-failure detection.</li>
-              <li><strong>Budget & Execution Bounds:</strong> Implemented strict model/tool/test/time/token budgets with timeout REPLAN/STOP decisions and per-call audit telemetry.</li>
-              <li><strong>Empirical Evaluation:</strong> Ran v2 held-out evaluation on 35 Python bug-fix tasks with 3 repetitions across 3 strategies (315 runs): strict resolution reached 21.9% for failure-guided/fixed-retry vs 5.7% for single-shot, with zero budget-violation cases.</li>
-            </ul>
-
-            <div class="tag-list">
-              <span class="tag tag-accent">Python</span>
-              <span class="tag">Ollama</span>
-              <span class="tag">Gemma 4</span>
-              <span class="tag">JSON Schema</span>
-              <span class="tag">pytest</span>
-              <span class="tag">Agentic AI</span>
-              <span class="tag"><a href="https://github.com/Vanshkumar16/Agentfllow" target="_blank" rel="noreferrer">GitHub Repository ↗</a></span>
-            </div>
-          </article>
-
-          <!-- PROJECT 02: APEX -->
-          <article class="case-study-card">
-            <div class="case-study-header">
-              <div>
-                <div class="case-study-cat">AI Financial Intelligence • Data Engineering • Systems</div>
-                <h3 class="case-study-title">
-                  <span class="active-pulse-dot"></span>
-                  <a href="https://github.com/Vanshkumar16/Apex" target="_blank" rel="noreferrer">
-                    APEX — Bloomberg-Style Financial Intelligence Workstation
-                  </a>
-                </h3>
-              </div>
-              <span class="badge-green">Active Workstation</span>
-            </div>
-
-            <p class="case-study-desc">
-              Unified financial intelligence environment inspired by professional market terminals. Consolidates market feeds, financial statements, news feeds, and an AI market copilot into a command-driven analytical workstation (unifying research from Artha AI and Finora).
-            </p>
-
-            <!-- Architecture Flow -->
-            <div class="arch-box">
-              <div class="arch-label">Data & Ingestion Architecture</div>
-              <div class="arch-flow">
-                <span class="arch-step">Market Data (Yahoo/Coinbase)</span>
-                <span class="arch-arrow">→</span>
-                <span class="arch-step">Ingestion & Validation Layer</span>
-                <span class="arch-arrow">→</span>
-                <span class="arch-step">Redis Timeseries & Pub/Sub Fan-out</span>
-                <span class="arch-arrow">→</span>
-                <span class="arch-step">Analytics & AI/RAG Engine</span>
-                <span class="arch-arrow">→</span>
-                <span class="arch-step">WebSockets Broadcast</span>
-                <span class="arch-arrow">→</span>
-                <span class="arch-step">Unified Terminal Canvas</span>
-              </div>
-            </div>
-
-            <ul class="case-study-bullets">
-              <li><strong>Market Ingestion & Streaming:</strong> Streams live equity and crypto feeds over WebSockets with automated fallback to simulated data upon upstream provider throttling.</li>
-              <li><strong>High-Throughput Distribution:</strong> Implemented Redis quote caching and Pub/Sub fan-out for multi-worker WebSocket updates, SQLite persistence, and API token-bucket rate limiting.</li>
-              <li><strong>Containerized Infrastructure:</strong> Packaged with Docker Compose and Nginx reverse proxy configuration for reproducible, modular service orchestration.</li>
-            </ul>
-
-            <div class="tag-list">
-              <span class="tag tag-accent">FastAPI</span>
-              <span class="tag">WebSockets</span>
-              <span class="tag">Redis Pub/Sub</span>
-              <span class="tag">SQLite</span>
-              <span class="tag">HTML5 Canvas</span>
-              <span class="tag">Docker</span>
-              <span class="tag">Nginx</span>
-              <span class="tag"><a href="https://github.com/Vanshkumar16/Apex" target="_blank" rel="noreferrer">GitHub Repository ↗</a></span>
-            </div>
-          </article>
-
-          <!-- PROJECT 03: KRISHI NETRA AI -->
-          <article class="case-study-card">
-            <div class="case-study-header">
-              <div>
-                <div class="case-study-cat">Applied AI • Computer Vision • Smart Agriculture</div>
-                <h3 class="case-study-title">
-                  <span class="active-pulse-dot"></span>
-                  <a href="https://github.com/Vanshkumar16/krishinetra" target="_blank" rel="noreferrer">
-                    Krishi Netra AI — Edge-AI Crop Diagnostics & Grading
-                  </a>
-                </h3>
-              </div>
-              <span class="badge-winner">SIH 2025 Winner</span>
-            </div>
-
-            <p class="case-study-desc">
-              National hackathon-winning AI agricultural solution addressing manual quality inspection bottlenecks through automated image analysis, disease detection, and produce grading. Developed for the Ministry of Consumer Affairs, Food & Public Distribution.
-            </p>
-
-            <!-- Architecture Flow -->
-            <div class="arch-box">
-              <div class="arch-label">Computer Vision Pipeline</div>
-              <div class="arch-flow">
-                <span class="arch-step">Image Capture</span>
-                <span class="arch-arrow">→</span>
-                <span class="arch-step">Preprocessing & Augmentation</span>
-                <span class="arch-arrow">→</span>
-                <span class="arch-step">CNN Vision Model (PyTorch)</span>
-                <span class="arch-arrow">→</span>
-                <span class="arch-step">Pathology / Grading Assessment</span>
-                <span class="arch-arrow">→</span>
-                <span class="arch-step">Offline Localized Advisories</span>
-              </div>
-            </div>
-
-            <ul class="case-study-bullets">
-              <li><strong>AI/ML Contribution:</strong> Engineered computer vision classification models for crop leaf disease detection and produce quality estimation.</li>
-              <li><strong>Edge-Deployable:</strong> Designed for lightweight inference on edge hardware to support rural deployments with zero or intermittent internet connectivity.</li>
-              <li><strong>Recognition:</strong> Awarded 1st Place at Smart India Hackathon 2025 among thousands of participating teams nationwide.</li>
-            </ul>
-
-            <div class="tag-list">
-              <span class="tag tag-accent">Computer Vision</span>
-              <span class="tag">PyTorch</span>
-              <span class="tag">Edge AI</span>
-              <span class="tag">Smart Agriculture</span>
-              <span class="tag">SIH Winner</span>
-              <span class="tag"><a href="https://github.com/Vanshkumar16/krishinetra" target="_blank" rel="noreferrer">Project Details ↗</a></span>
-            </div>
-          </article>
-
-          <!-- PROJECT 04: SKILLSCAPE -->
-          <article class="case-study-card">
-            <div class="case-study-header">
-              <div>
-                <div class="case-study-cat">Knowledge Graphs • NLP • Personalized Learning</div>
-                <h3 class="case-study-title">
-                  <span class="active-pulse-dot"></span>
-                  <span>SkillScape — Interactive 3D Technical Knowledge Graph</span>
-                </h3>
-              </div>
-              <span class="badge-green">Team Velion AI</span>
-            </div>
-
-            <p class="case-study-desc">
-              Aggregates fragmented learning data across GitHub repositories, Notion notes, and course certifications to generate a structured, interactive knowledge graph representing a developer's skills and progression.
-            </p>
-
-            <ul class="case-study-bullets">
-              <li><strong>AI/ML Layer Contribution:</strong> Led the data extraction and NLP pipeline, implementing technical entity identification, embedding generation, and vector similarity computation across project sources.</li>
-              <li><strong>Relationship Graph:</strong> Structured multi-hop relationships between technical concepts, projects, and demonstrated competency areas to guide personalized learning paths.</li>
-            </ul>
-
-            <div class="tag-list">
-              <span class="tag tag-accent">Knowledge Graphs</span>
-              <span class="tag">NLP</span>
-              <span class="tag">Embeddings</span>
-              <span class="tag">Vector Similarity</span>
-              <span class="tag">Python</span>
-            </div>
-          </article>
-
-          <!-- PROJECT 05: OPTIROUTE -->
-          <article class="case-study-card">
-            <div class="case-study-header">
-              <div>
-                <div class="case-study-cat">LLM Infrastructure • Model Routing • Systems</div>
-                <h3 class="case-study-title">
-                  <span class="active-pulse-dot"></span>
-                  <span>OptiRoute — Intelligent LLM Proxy & Semantic Router</span>
-                </h3>
-              </div>
-              <span class="badge-green">Infrastructure Concept</span>
-            </div>
-
-            <p class="case-study-desc">
-              Open-source LLM proxy-router concept focused on optimizing agentic workflows through dynamic model selection, semantic caching, and autonomous context pruning to reduce operational cost and token latency.
-            </p>
-
-            <!-- Architecture Flow -->
-            <div class="arch-box">
-              <div class="arch-label">Routing & Optimization Flow</div>
-              <div class="arch-flow">
-                <span class="arch-step">Agent Request</span>
-                <span class="arch-arrow">→</span>
-                <span class="arch-step">Request Analysis</span>
-                <span class="arch-arrow">→</span>
-                <span class="arch-step">Semantic Cache Check</span>
-                <span class="arch-arrow">→</span>
-                <span class="arch-step">Dynamic Model Arbitrage</span>
-                <span class="arch-arrow">→</span>
-                <span class="arch-step">Autonomous Context Pruning</span>
-                <span class="arch-arrow">→</span>
-                <span class="arch-step">Provider Execution</span>
-              </div>
-            </div>
-
-            <ul class="case-study-bullets">
-              <li><strong>Dynamic Model Arbitrage:</strong> Automatically dispatches sub-tasks to smaller models or frontier models based on prompt complexity, latency constraints, and cost budgets.</li>
-              <li><strong>Semantic Caching:</strong> Identifies semantically identical or near-duplicate queries using vector embeddings to avoid redundant inference calls.</li>
-              <li><strong>Autonomous Context Pruning:</strong> Filters noisy history and irrelevant system context prior to downstream forwarding.</li>
-            </ul>
-
-            <div class="tag-list">
-              <span class="tag tag-accent">LLM Infrastructure</span>
-              <span class="tag">Semantic Caching</span>
-              <span class="tag">Model Routing</span>
-              <span class="tag">Python</span>
-              <span class="tag">FastAPI</span>
-            </div>
-          </article>
-
-          <!-- PROJECT 06: OPENENV SUPPLY CHAIN DISRUPTION -->
-          <article class="case-study-card">
-            <div class="case-study-header">
-              <div>
-                <div class="case-study-cat">Software Engineering • Simulation • Data Systems</div>
-                <h3 class="case-study-title">
-                  <span class="active-pulse-dot"></span>
-                  <a href="https://github.com/Vanshkumar16/supply_chain_envi" target="_blank" rel="noreferrer">
-                    OpenEnv — Supply Chain Disruption Simulation Environment
-                  </a>
-                </h3>
-              </div>
-            </div>
-
-            <p class="case-study-desc">
-              Five-node supplier-warehouse-retailer simulation environment featuring stochastic supplier outages, shipping-lane congestion, and multi-echelon inventory dynamics for external agent and RL evaluation.
-            </p>
-
-            <ul class="case-study-bullets">
-              <li><strong>State & Action API:</strong> Exposes step, reset, and state inspection operations over both HTTP REST and WebSockets for external agent interaction.</li>
-              <li><strong>Evaluation Metrics:</strong> Explicit reward and observation structures measuring fill rates, backlog penalties, holding costs, and supply chain resilience.</li>
-              <li><strong>Packaging:</strong> Packaged with Docker for isolated benchmarking across external reinforcement learning frameworks.</li>
-            </ul>
-
-            <div class="tag-list">
-              <span class="tag tag-accent">Python</span>
-              <span class="tag">FastAPI</span>
-              <span class="tag">WebSockets</span>
-              <span class="tag">Simulation</span>
-              <span class="tag">Docker</span>
-              <span class="tag"><a href="https://github.com/Vanshkumar16/supply_chain_envi" target="_blank" rel="noreferrer">GitHub Repository ↗</a></span>
-            </div>
-          </article>
-
-          <!-- PROJECT 07: NETWORK INTRUSION DETECTION -->
-          <article class="case-study-card">
-            <div class="case-study-header">
-              <div>
-                <div class="case-study-cat">Cybersecurity • Machine Learning • Anomaly Detection</div>
-                <h3 class="case-study-title">
-                  <span class="active-pulse-dot"></span>
-                  <a href="https://github.com/Vanshkumar16/Intrusion-System" target="_blank" rel="noreferrer">
-                    Network Intrusion Detection — CICIDS2017 Botnet Classifier
-                  </a>
-                </h3>
-              </div>
-              <span class="badge-green">99.98% Accuracy</span>
-            </div>
-
-            <p class="case-study-desc">
-              High-precision network traffic classifier built to identify Botnet / ARES attack patterns under severe class imbalance conditions using the CICIDS2017 benchmark dataset.
-            </p>
-
-            <ul class="case-study-bullets">
-              <li><strong>Imbalance Handling:</strong> Preprocessed 185,494 network flows into 67 engineered features and addressed ~99:1 class skew applying SMOTE strictly on training folds to prevent data leakage.</li>
-              <li><strong>Empirical Results:</strong> LightGBM achieved 99.98% accuracy, 0.99 attack F1-score, and 1.00 ROC-AUC on 37,099 held-out test flows (0 false negatives, 8 false positives).</li>
-            </ul>
-
-            <div class="tag-list">
-              <span class="tag tag-accent">LightGBM</span>
-              <span class="tag">XGBoost</span>
-              <span class="tag">SMOTE</span>
-              <span class="tag">scikit-learn</span>
-              <span class="tag"><a href="https://github.com/Vanshkumar16/Intrusion-System" target="_blank" rel="noreferrer">GitHub Repository ↗</a></span>
-            </div>
-          </article>
-
-          <!-- PROJECT 08: COMPETITIVE PROGRAMMING SYNC ORCHESTRATOR -->
-          <article class="case-study-card">
-            <div class="case-study-header">
-              <div>
-                <div class="case-study-cat">Automation • Systems Integration • Developer Tooling</div>
-                <h3 class="case-study-title">
-                  <span class="active-pulse-dot"></span>
-                  <a href="https://github.com/Vanshkumar16/Competitive_programming" target="_blank" rel="noreferrer">
-                    Codeforces / LeetCode Submission Sync Orchestrator
-                  </a>
-                </h3>
-              </div>
-            </div>
-
-            <p class="case-study-desc">
-              Four-agent automated synchronization pipeline separating credential preflight, submission extraction, state tracking, and Git publishing.
-            </p>
-
-            <ul class="case-study-bullets">
-              <li><strong>Fault-Isolation Architecture:</strong> Isolates per-platform network/API failures, maintains versioned problem solutions, and rolls back incomplete pushes.</li>
-              <li><strong>Automated Execution:</strong> Configured hourly LeetCode GraphQL sync via GitHub Actions and local Codeforces API sync with 22 mocked validation tests.</li>
-            </ul>
-
-            <div class="tag-list">
-              <span class="tag tag-accent">Python</span>
-              <span class="tag">Codeforces API</span>
-              <span class="tag">LeetCode GraphQL</span>
-              <span class="tag">GitHub Actions</span>
-              <span class="tag"><a href="https://github.com/Vanshkumar16/Competitive_programming" target="_blank" rel="noreferrer">GitHub Repository ↗</a></span>
-            </div>
-          </article>
-
-        </div>
-      </section>
-
-      <!-- =================================================================
-           06. Experience & Professional Development
-           ================================================================= -->
-      <section class="section" id="experience">
-        <div class="eyebrow">CAREER & ENGAGEMENT</div>
-        <h2 class="section-title">Experience & Professional Development</h2>
-
-        <!-- IBM Internship -->
-        <article class="timeline-item">
-          <div class="timeline-header">
-            <h3 class="timeline-title">IBM</h3>
-            <span class="timeline-date">June – August 2026</span>
+        <article class="work-item">
+          <div class="item-header">
+            <h3 class="item-title"><a href="#">IBM</a></h3>
+            <span class="item-date">Jun 2026 – Aug 2026</span>
           </div>
-          <div class="timeline-role">Data Analyst Intern</div>
-          <p class="timeline-desc">
+          <div class="item-role">Data Analyst Intern</div>
+          <p class="item-desc">
             Engaged in practical data analysis workflows involving data extraction, cleaning, exploratory data analysis, and building structured analytical reports for business decision support.
           </p>
           <div class="tag-list">
-            <span class="tag">Data Analysis</span>
             <span class="tag">Python</span>
             <span class="tag">SQL</span>
-            <span class="tag">Data Visualization</span>
-            <span class="tag">Statistical Modeling</span>
+            <span class="tag">Data Analysis</span>
+            <span class="tag">Statistics</span>
           </div>
         </article>
 
-        <!-- Open Source & Independent Building -->
-        <article class="timeline-item">
-          <div class="timeline-header">
-            <h3 class="timeline-title">Open Source & Independent Systems Building</h3>
-            <span class="timeline-date">2023 – Present</span>
+        <article class="work-item">
+          <div class="item-header">
+            <h3 class="item-title"><a href="https://github.com/Vanshkumar16" target="_blank" rel="noreferrer">Open Source & Systems Building</a></h3>
+            <span class="item-date">2023 – Present</span>
           </div>
-          <div class="timeline-role">AI/ML & Systems Developer</div>
-          <p class="timeline-desc">
-            Designing and publishing open-source tooling, local agent runtimes, real-time market data streaming workstations, and competitive programming automation frameworks.
+          <div class="item-role">AI/ML & Systems Developer · Remote</div>
+          <p class="item-desc">
+            Building local coding-agent runtimes, real-time market workstations, and developer automation pipelines:
+          </p>
+          <ul class="item-bullets">
+            <li>Engineered AgentFlow, a budget-aware code-repair agent with failure-guided recovery, strict JSON validation, and timeout REPLAN/STOP policies.</li>
+            <li>Built APEX, a command-driven financial workstation streaming Yahoo Finance & Coinbase feeds over WebSockets with Redis quote caching and Pub/Sub fan-out.</li>
+            <li>Architected Finora, integrating LangGraph agentic routing, FAISS document retrieval, and RabbitMQ background workers.</li>
+          </ul>
+          <div class="tag-list">
+            <span class="tag">Agentic AI</span>
+            <span class="tag">LangGraph</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">WebSockets</span>
+            <span class="tag">Redis</span>
+            <span class="tag">Docker</span>
+          </div>
+        </article>
+      </section>
+
+      <!-- =================================================================
+           4. Education Section
+           ================================================================= -->
+      <section class="section">
+        <h2>Education</h2>
+        <article class="edu-item">
+          <div class="item-header">
+            <h3 class="item-title">JSS Academy of Technical Education, Noida</h3>
+            <span class="item-date">2024 – 2028</span>
+          </div>
+          <div class="item-role">Bachelor of Technology in Computer Science and Engineering (CGPA: 8.0/10)</div>
+        </article>
+      </section>
+
+      <!-- =================================================================
+           5. Hackathons & Honors Section
+           ================================================================= -->
+      <section class="section">
+        <h2>Hackathons</h2>
+
+        <article class="hackathon-item">
+          <div class="item-header">
+            <h3 class="item-title">Smart India Hackathon 2025 (SIH 2025)</h3>
+            <span class="badge-award">Winner (1st Place)</span>
+          </div>
+          <div class="item-role">Krishi Netra AI · Ministry of Consumer Affairs, Food & Public Distribution</div>
+          <p class="item-desc">
+            Edge-AI computer vision agricultural diagnostic platform enabling automated crop leaf disease detection, produce grading, and harvest quality assessment deployable on edge devices with offline capabilities.
           </p>
           <div class="tag-list">
-            <span class="tag">Open Source</span>
-            <span class="tag">Agentic AI</span>
-            <span class="tag">FastAPI</span>
+            <span class="tag">Edge AI</span>
+            <span class="tag">Computer Vision</span>
             <span class="tag">PyTorch</span>
-            <span class="tag">WebSockets</span>
+            <span class="tag">Smart Agriculture</span>
           </div>
         </article>
-      </section>
 
-      <!-- =================================================================
-           07. Research, Experiments & Technical Curiosity
-           ================================================================= -->
-      <section class="section" id="research">
-        <div class="eyebrow">DEEP DIVES</div>
-        <h2 class="section-title">Research, Experiments & Technical Curiosity</h2>
-        <p class="section-subtitle">
-          Exploring the theoretical and practical foundations of machine learning, transformer architectures, and reliable agentic systems.
-        </p>
-
-        <div class="research-grid">
-
-          <div class="research-card">
-            <div class="research-card-title">🔬 Transformer Architectures</div>
-            <ul class="research-bullets">
-              <li>Self-attention & multi-head scaled dot-product attention mechanics</li>
-              <li>Rotary Positional Embeddings (RoPE) & tokenization strategies</li>
-              <li>Decoder-only causal architectures & autoregressive next-token prediction</li>
-              <li>Key-Value (KV) cache memory footprints and context windows</li>
-            </ul>
+        <article class="hackathon-item">
+          <div class="item-header">
+            <h3 class="item-title">ARTHA AI (Smart India Hackathon 2026)</h3>
+            <span class="badge-award">Selected Project</span>
           </div>
-
-          <div class="research-card">
-            <div class="research-card-title">⚙️ LLM Systems & Inference</div>
-            <ul class="research-bullets">
-              <li>Local model quantization (GGUF, 4-bit/8-bit precision)</li>
-              <li>Retrieval-Augmented Generation (RAG) with vector similarity</li>
-              <li>Semantic caching & request arbitrage to reduce token consumption</li>
-              <li>Constrained generation & JSON Schema enforcement</li>
-            </ul>
-          </div>
-
-          <div class="research-card">
-            <div class="research-card-title">🤖 Agentic Systems & Orchestration</div>
-            <ul class="research-bullets">
-              <li>Multi-agent state graph transitions & human-in-the-loop controls</li>
-              <li>Failure-guided recovery policies & timeout replanning</li>
-              <li>Deterministic budget boundaries (token, time, retry bounds)</li>
-              <li>Tool execution security & sandboxed filesystem access</li>
-            </ul>
-          </div>
-
-          <div class="research-card">
-            <div class="research-card-title">📊 ML Modeling & Optimization</div>
-            <ul class="research-bullets">
-              <li>Time-based temporal cross-validation to prevent look-ahead bias</li>
-              <li>Handling severe class imbalance using SMOTE on training folds</li>
-              <li>Bayesian hyperparameter optimization using Optuna</li>
-              <li>Ensemble stacking combining gradient boosting and meta-classifiers</li>
-            </ul>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- =================================================================
-           08. Achievements & Recognition
-           ================================================================= -->
-      <section class="section" id="achievements">
-        <div class="eyebrow">HONORS & MILESTONES</div>
-        <h2 class="section-title">Achievements & Recognition</h2>
-
-        <article class="timeline-item">
-          <div class="timeline-header">
-            <h3 class="timeline-title">Smart India Hackathon 2025</h3>
-            <span class="badge-winner">Winner (1st Place)</span>
-          </div>
-          <div class="timeline-role">Project: Krishi Netra AI · Ministry of Consumer Affairs, Food & Public Distribution</div>
-          <p class="timeline-desc">
-            Emerged as joint winner nationwide for building an automated edge-AI computer vision agricultural quality evaluation and crop pathology diagnosis platform.
+          <div class="item-role">Rural Business-Intelligence & Data-Federation Architecture</div>
+          <p class="item-desc">
+            Contributed core system information hierarchy, architecture, and data-federation planning for nationwide rural economic intelligence (<a href="https://github.com/Vanshkumar16/Artha-AI" target="_blank" rel="noreferrer">github.com/Vanshkumar16/Artha-AI</a>).
           </p>
+          <div class="tag-list">
+            <span class="tag">System Design</span>
+            <span class="tag">Data Federation</span>
+            <span class="tag">Fintech</span>
+            <span class="tag">Python</span>
+          </div>
         </article>
 
-        <article class="timeline-item">
-          <div class="timeline-header">
-            <h3 class="timeline-title">ARTHA AI (Smart India Hackathon 2026)</h3>
-            <span class="badge-winner">Selected Project</span>
+        <article class="hackathon-item">
+          <div class="item-header">
+            <h3 class="item-title">Hacknovate 7.0</h3>
+            <span class="badge-award">Runner-up</span>
           </div>
-          <div class="timeline-role">Rural Business-Intelligence & Data-Federation Architecture</div>
-          <p class="timeline-desc">
-            Contributed core system information hierarchy and data-federation planning for nationwide rural economic intelligence.
-          </p>
-        </article>
-
-        <article class="timeline-item">
-          <div class="timeline-header">
-            <h3 class="timeline-title">Hacknovate 7.0</h3>
-            <span class="badge-winner">Runner-up</span>
-          </div>
-          <div class="timeline-role">National Level Hackathon</div>
-          <p class="timeline-desc">
+          <div class="item-role">National Level Hackathon</div>
+          <p class="item-desc">
             Built real-time algorithmic solutions competing against student and developer teams nationwide.
           </p>
         </article>
 
-        <article class="timeline-item">
-          <div class="timeline-header">
-            <h3 class="timeline-title">Amazon ML Summer School</h3>
-            <span class="badge-green">Selected Participant</span>
+        <article class="hackathon-item">
+          <div class="item-header">
+            <h3 class="item-title">Amazon ML Summer School</h3>
+            <span class="badge-status">Selected Participant</span>
           </div>
-          <div class="timeline-role">Amazon India Machine Learning Division</div>
-          <p class="timeline-desc">
+          <div class="item-role">Amazon India Machine Learning Division</div>
+          <p class="item-desc">
             Selected for intensive engineering mentorship covering Supervised Learning, Deep Neural Networks, Dimensionality Reduction, and LLMs.
           </p>
         </article>
+      </section>
 
-        <!-- Coding Profiles Section -->
-        <div style="margin-top: 1.5rem;">
-          <div class="eyebrow" style="margin-bottom: 0.5rem;">ALGORITHMIC PROBLEM SOLVING</div>
-          <div class="cp-grid">
-            <a href="https://codeforces.com/profile/vk04" target="_blank" rel="noreferrer" class="cp-card">
-              <div class="cp-platform">Codeforces</div>
-              <div class="cp-handle">vk04 · Specialist</div>
-              <div class="cp-stats">Peak Rating: 1453 · 26 Contests · 350+ Solved</div>
-            </a>
-            <a href="https://leetcode.com/u/Vansh_kumar16" target="_blank" rel="noreferrer" class="cp-card">
-              <div class="cp-platform">LeetCode</div>
-              <div class="cp-handle">@Vansh_kumar16</div>
-              <div class="cp-stats">250+ Problems Solved · C++ Archive</div>
-            </a>
-            <a href="https://github.com/Vanshkumar16" target="_blank" rel="noreferrer" class="cp-card">
-              <div class="cp-platform">GitHub</div>
-              <div class="cp-handle">@Vanshkumar16</div>
-              <div class="cp-stats">Public Code & System Repositories</div>
-            </a>
+      <!-- =================================================================
+           6. Skills Section
+           ================================================================= -->
+      <section class="section">
+        <h2>Skills</h2>
+
+        <div class="skill-group">
+          <div class="skill-title">Languages</div>
+          <div class="tag-list">
+            <span class="tag">C++</span>
+            <span class="tag">Python</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Bash</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-title">AI & Deep Learning</div>
+          <div class="tag-list">
+            <span class="tag">PyTorch</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">Neural Networks (ANN)</span>
+            <span class="tag">Scikit-Learn</span>
+            <span class="tag">LightGBM</span>
+            <span class="tag">XGBoost</span>
+            <span class="tag">CatBoost</span>
+            <span class="tag">SMOTE</span>
+            <span class="tag">Optuna</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-title">LLMs & Agentic AI</div>
+          <div class="tag-list">
+            <span class="tag">LangGraph</span>
+            <span class="tag">LangChain</span>
+            <span class="tag">Ollama</span>
+            <span class="tag">Gemma 4</span>
+            <span class="tag">RAG</span>
+            <span class="tag">FAISS</span>
+            <span class="tag">Structured JSON Output Validation</span>
+            <span class="tag">Prompt Engineering</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-title">Backend & Distributed Systems</div>
+          <div class="tag-list">
+            <span class="tag">FastAPI</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Express.js</span>
+            <span class="tag">WebSockets</span>
+            <span class="tag">Redis Pub/Sub</span>
+            <span class="tag">RabbitMQ</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">SQLite</span>
+            <span class="tag">Prisma ORM</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-title">Infrastructure & DevOps</div>
+          <div class="tag-list">
+            <span class="tag">Docker</span>
+            <span class="tag">Nginx</span>
+            <span class="tag">Git</span>
+            <span class="tag">GitHub Actions (CI/CD)</span>
+            <span class="tag">Streaming Data Pipelines</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-title">Core CS & Problem Solving</div>
+          <div class="tag-list">
+            <span class="tag">Data Structures & Algorithms</span>
+            <span class="tag">Binary Search</span>
+            <span class="tag">Two Pointers</span>
+            <span class="tag">Sliding Window</span>
+            <span class="tag">Prefix Sums</span>
+            <span class="tag">Complexity Analysis</span>
           </div>
         </div>
       </section>
 
       <!-- =================================================================
-           09. Engineering Activity Log (Distinctive Feature)
+           7. Projects Section (Shine Gupta 2-Column Grid)
            ================================================================= -->
-      <section class="section" id="log">
-        <div class="eyebrow">ACTIVITY STREAM</div>
-        <h2 class="section-title">Engineering Log</h2>
-        <div class="eng-log">
-          <div class="eng-log-header">
-            <span>● LIVE ACTIVITY LOG</span>
+      <section class="section">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+
+          <!-- Project 1: APEX -->
+          <div class="project-card">
+            <div>
+              <div class="project-title-row">
+                <span class="active-dot" title="Active Project"></span>
+                <h3><a href="https://github.com/Vanshkumar16/Apex" target="_blank" rel="noreferrer">APEX</a></h3>
+              </div>
+              <p class="project-desc">
+                Command-driven market workstation streaming Yahoo Finance & Coinbase feeds over WebSockets with Redis quote caching, Pub/Sub fan-out, SQLite persistence, and Docker/Nginx orchestration.
+              </p>
+            </div>
+            <div class="tag-list">
+              <span class="tag">FastAPI</span>
+              <span class="tag">WebSockets</span>
+              <span class="tag">Redis</span>
+              <span class="tag">Docker</span>
+            </div>
           </div>
-          <ul class="eng-log-list">
-            <li class="eng-log-item">
-              <span class="eng-log-id">01 //</span>
-              <span class="eng-log-text">Exploring transformer architectures, multi-head attention, and KV cache efficiency</span>
-            </li>
-            <li class="eng-log-item">
-              <span class="eng-log-id">02 //</span>
-              <span class="eng-log-text">Experimenting with LLM orchestration, structured JSON outputs, and failure-aware agent recovery</span>
-            </li>
-            <li class="eng-log-item">
-              <span class="eng-log-id">03 //</span>
-              <span class="eng-log-text">Building high-throughput real-time WebSocket market streaming & Redis fan-out architecture</span>
-            </li>
-            <li class="eng-log-item">
-              <span class="eng-log-id">04 //</span>
-              <span class="eng-log-text">Studying edge-AI model efficiency, quantization, and reproducible evaluation benchmarks</span>
-            </li>
-          </ul>
-        </div>
-      </section>
 
-      <!-- =================================================================
-           10. What I'm Currently Exploring
-           ================================================================= -->
-      <section class="section" id="exploring">
-        <div class="eyebrow">ONGOING DEVELOPMENT</div>
-        <h2 class="section-title">Currently Exploring</h2>
-        <p class="section-subtitle">
-          My technical journey is continuous. These are the focus areas I'm actively researching and building around:
-        </p>
-
-        <div class="tag-list" style="gap: 0.5rem;">
-          <span class="tag tag-accent" style="padding: 0.35rem 0.65rem; font-size: 0.75rem;">Building and evaluating LLM-powered systems</span>
-          <span class="tag tag-accent" style="padding: 0.35rem 0.65rem; font-size: 0.75rem;">Understanding agentic architectures and orchestration</span>
-          <span class="tag tag-accent" style="padding: 0.35rem 0.65rem; font-size: 0.75rem;">Studying transformer architectures & deep learning foundations</span>
-          <span class="tag tag-accent" style="padding: 0.35rem 0.65rem; font-size: 0.75rem;">Improving model evaluation and optimization workflows</span>
-          <span class="tag tag-accent" style="padding: 0.35rem 0.65rem; font-size: 0.75rem;">Exploring AI infrastructure & intelligent model routing</span>
-          <span class="tag tag-accent" style="padding: 0.35rem 0.65rem; font-size: 0.75rem;">Studying quantitative research & computational methods</span>
-        </div>
-      </section>
-
-      <!-- =================================================================
-           11. Education Section
-           ================================================================= -->
-      <section class="section" id="education">
-        <div class="eyebrow">ACADEMIC BACKGROUND</div>
-        <h2 class="section-title">Education</h2>
-        <article class="timeline-item">
-          <div class="timeline-header">
-            <h3 class="timeline-title">JSS Academy of Technical Education, Noida</h3>
-            <span class="timeline-date">Expected 2028</span>
+          <!-- Project 2: AgentFlow -->
+          <div class="project-card">
+            <div>
+              <div class="project-title-row">
+                <span class="active-dot" title="Active Project"></span>
+                <h3><a href="https://github.com/Vanshkumar16/Agentfllow" target="_blank" rel="noreferrer">AgentFlow</a></h3>
+              </div>
+              <p class="project-desc">
+                Local code-repair agent with single-shot, fixed-retry, and failure-guided policies. Features JSON schema validation, timeout REPLAN/STOP decisions, and bounded budgets on 35 bug-fix tasks.
+              </p>
+            </div>
+            <div class="tag-list">
+              <span class="tag">Python</span>
+              <span class="tag">Ollama</span>
+              <span class="tag">Gemma 4</span>
+              <span class="tag">JSON Schema</span>
+            </div>
           </div>
-          <div class="timeline-role">Bachelor of Technology (B.Tech) — Computer Science and Engineering</div>
-          <p class="timeline-desc">
-            <strong>CGPA: 8.0 / 10</strong> · Relevant Coursework: Data Structures and Algorithms, Object-Oriented Programming, Database Management Systems, Computer Networks, Operating Systems, Artificial Intelligence, Machine Learning, and Mathematics for Computing.
-          </p>
-        </article>
-      </section>
 
-      <!-- =================================================================
-           12. Contact Section
-           ================================================================= -->
-      <section class="section" id="contact">
-        <div class="contact-card">
-          <div class="eyebrow" style="color: var(--accent-cyan); margin: 0;">LET'S TALK</div>
-          <h2 class="contact-heading">Have an interesting problem to solve? Let's connect.</h2>
-          <p class="contact-text">
-            I'm always interested in connecting with engineers, researchers, builders, and teams working on meaningful technical problems. Whether it's AI research, machine learning systems, open-source collaboration, or an engineering opportunity, I'd be glad to connect.
-          </p>
-          <div class="contact-buttons-row">
-            <a href="mailto:vk1114211249@gmail.com" class="btn btn-primary">
-              Email Me (vk1114211249@gmail.com)
-            </a>
-            <a href="https://linkedin.com/in/vansh-kumar-idkwtfusee143" target="_blank" rel="noreferrer" class="btn btn-secondary">
-              Connect on LinkedIn
-            </a>
-            <a href="https://github.com/Vanshkumar16" target="_blank" rel="noreferrer" class="btn btn-secondary">
-              Explore GitHub
-            </a>
-            <a href="https://x.com/k11107_kumar" target="_blank" rel="noreferrer" class="btn btn-secondary">
-              Follow on X (@k11107_kumar)
-            </a>
+          <!-- Project 3: Finora -->
+          <div class="project-card">
+            <div>
+              <div class="project-title-row">
+                <span class="active-dot" title="Active Project"></span>
+                <h3><a href="https://github.com/Vanshkumar16/finora" target="_blank" rel="noreferrer">Finora</a></h3>
+              </div>
+              <p class="project-desc">
+                Service-oriented multi-tenant financial platform with Next.js client, JWT Express API, PostgreSQL/Prisma persistence, and Python FastAPI AI service with LangGraph routing and FAISS document RAG.
+              </p>
+            </div>
+            <div class="tag-list">
+              <span class="tag">Next.js</span>
+              <span class="tag">LangGraph</span>
+              <span class="tag">FAISS</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
           </div>
+
+          <!-- Project 4: Krishi Netra AI -->
+          <div class="project-card">
+            <div>
+              <div class="project-title-row">
+                <span class="active-dot" title="Active Project"></span>
+                <h3><a href="https://github.com/Vanshkumar16/krishinetra" target="_blank" rel="noreferrer">Krishi Netra AI</a></h3>
+              </div>
+              <p class="project-desc">
+                Smart India Hackathon 2025 winning agricultural diagnostic platform using PyTorch computer vision for automated crop disease detection and produce grading on edge hardware.
+              </p>
+            </div>
+            <div class="tag-list">
+              <span class="tag">Computer Vision</span>
+              <span class="tag">PyTorch</span>
+              <span class="tag">Edge AI</span>
+              <span class="tag">SIH Winner</span>
+            </div>
+          </div>
+
+          <!-- Project 5: Codeforces / LeetCode Sync -->
+          <div class="project-card">
+            <div>
+              <div class="project-title-row">
+                <span class="active-dot" title="Active Project"></span>
+                <h3><a href="https://github.com/Vanshkumar16/Competitive_programming" target="_blank" rel="noreferrer">CP Sync Orchestrator</a></h3>
+              </div>
+              <p class="project-desc">
+                Four-agent automation pipeline separating credential preflight, submission extraction, state tracking, and Git publishing with 22 mocked validation checks and hourly GitHub Actions.
+              </p>
+            </div>
+            <div class="tag-list">
+              <span class="tag">Python</span>
+              <span class="tag">Codeforces API</span>
+              <span class="tag">GitHub Actions</span>
+            </div>
+          </div>
+
+          <!-- Project 6: Network Intrusion Detection -->
+          <div class="project-card">
+            <div>
+              <div class="project-title-row">
+                <span class="active-dot" title="Active Project"></span>
+                <h3><a href="https://github.com/Vanshkumar16/Intrusion-System" target="_blank" rel="noreferrer">Intrusion-System</a></h3>
+              </div>
+              <p class="project-desc">
+                Cleaned 185,494 network flows into 67 features and resolved ~99:1 imbalance using SMOTE; LightGBM achieved 99.98% accuracy and 1.00 ROC-AUC on 37,099 held-out test flows.
+              </p>
+            </div>
+            <div class="tag-list">
+              <span class="tag">LightGBM</span>
+              <span class="tag">XGBoost</span>
+              <span class="tag">SMOTE</span>
+              <span class="tag">scikit-learn</span>
+            </div>
+          </div>
+
+          <!-- Project 7: F1 Race Prediction -->
+          <div class="project-card">
+            <div>
+              <div class="project-title-row">
+                <span class="active-dot" title="Active Project"></span>
+                <h3><a href="https://github.com/Vanshkumar16/f1-stacking-ml" target="_blank" rel="noreferrer">f1-stacking-ml</a></h3>
+              </div>
+              <p class="project-desc">
+                Stacked ensemble machine learning pipeline predicting Formula 1 race results with temporal cross-validation (1950–2022 train, 2023–2024 test) and Optuna hyperparameter tuning.
+              </p>
+            </div>
+            <div class="tag-list">
+              <span class="tag">Ensemble Stacking</span>
+              <span class="tag">Optuna</span>
+              <span class="tag">scikit-learn</span>
+            </div>
+          </div>
+
+          <!-- Project 8: OpenEnv Supply Chain -->
+          <div class="project-card">
+            <div>
+              <div class="project-title-row">
+                <span class="active-dot" title="Active Project"></span>
+                <h3><a href="https://github.com/Vanshkumar16/supply_chain_envi" target="_blank" rel="noreferrer">supply_chain_envi</a></h3>
+              </div>
+              <p class="project-desc">
+                Five-node supplier-warehouse-retailer simulation environment with stochastic outages and shipping congestion, exposing step/reset/state APIs over WebSockets and Docker.
+              </p>
+            </div>
+            <div class="tag-list">
+              <span class="tag">Simulation</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">WebSockets</span>
+              <span class="tag">Docker</span>
+            </div>
+          </div>
+
+          <!-- Project 9: LeetCode & DSA in C++ -->
+          <div class="project-card">
+            <div>
+              <div class="project-title-row">
+                <span class="active-dot" title="Active Project"></span>
+                <h3><a href="https://github.com/Vanshkumar16/Leetcode" target="_blank" rel="noreferrer">LeetCode & DSA in C++</a></h3>
+              </div>
+              <p class="project-desc">
+                Curated repository of 250+ solved competitive programming and data structure problems in C++ covering binary search, sliding window, graph traversals, and dynamic programming.
+              </p>
+            </div>
+            <div class="tag-list">
+              <span class="tag">C++</span>
+              <span class="tag">Algorithms</span>
+              <span class="tag">Data Structures</span>
+            </div>
+          </div>
+
         </div>
       </section>
 
     </div>
   </main>
-
-  <!-- =================================================================
-       Footer
-       ================================================================= -->
-  <footer class="footer">
-    <p>Vansh Kumar • AI/ML Engineer & Systems Builder • 2026</p>
-    <p style="margin-top: 0.35rem; color: #475569;">
-      Built with clean semantic HTML & CSS • Styled in Dark Technical Editorial
-    </p>
-  </footer>
-
 </body>
 </html>
