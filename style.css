@@ -1,0 +1,434 @@
+/* ==========================================================================
+   Vansh Kumar - Portfolio & Resume Stylesheet
+   Inspired by Minimalist Developer Portfolios (shine-5705.github.io aesthetic)
+   ========================================================================== */
+
+/* --- Base Reset & Typography --- */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #09090b;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings use clean Inter sans-serif */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #09090b;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* --- Centered Single Column Container --- */
+.container {
+  max-width: 42rem; /* 672px - max-w-2xl */
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 4.5rem 1.5rem;
+  }
+}
+
+/* Vertical Rhythm between sections */
+.content > * + * {
+  margin-top: 2rem;
+}
+
+/* --- Header / Hero Section --- */
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.header-info {
+  flex: 1;
+}
+
+.name {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 0.375rem;
+}
+
+.tagline {
+  color: #3f3f46;
+  font-size: 0.9375rem;
+  line-height: 1.4;
+  margin-bottom: 0.625rem;
+}
+
+.location {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: #71717a;
+  font-size: 0.75rem;
+  margin-bottom: 0.875rem;
+}
+
+.location svg {
+  width: 14px;
+  height: 14px;
+}
+
+.avatar-wrapper {
+  flex-shrink: 0;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 0.625rem;
+  object-fit: cover;
+  background-color: #f4f4f5;
+  border: 1px solid #e4e4e7;
+  display: block;
+}
+
+/* Social Icon Buttons */
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.125rem;
+  height: 2.125rem;
+  border: 1px solid #e4e4e7;
+  border-radius: 0.375rem;
+  color: #18181b;
+  text-decoration: none;
+  background-color: #ffffff;
+  transition: all 0.15s ease;
+}
+
+.icon-btn svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.icon-btn:hover {
+  background-color: #f4f4f5;
+  border-color: #d4d4d8;
+  color: #000000;
+}
+
+/* --- Section Headings --- */
+.section h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.875rem;
+  padding-bottom: 0.25rem;
+}
+
+.section-text {
+  color: #27272a;
+  line-height: 1.6;
+}
+
+/* --- Timeline & Items --- */
+.timeline-item {
+  margin-bottom: 1.5rem;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.item-header h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.company-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.company-link:hover {
+  text-decoration: underline;
+}
+
+.item-date {
+  color: #71717a;
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.item-role {
+  color: #52525b;
+  font-size: 0.8125rem;
+  margin-top: 0.125rem;
+  margin-bottom: 0.375rem;
+}
+
+.item-description {
+  color: #27272a;
+  margin-bottom: 0.375rem;
+}
+
+.item-bullets {
+  padding-left: 1.25rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+  color: #3f3f46;
+}
+
+.item-bullets li {
+  margin-bottom: 0.25rem;
+}
+
+/* --- Badges & Tags --- */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  margin-top: 0.5rem;
+}
+
+.tag {
+  background-color: #f4f4f5;
+  color: #52525b;
+  font-size: 0.6875rem;
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.25rem;
+  line-height: 1.25;
+  font-family: inherit;
+  border: 1px solid transparent;
+}
+
+.tag:hover {
+  background-color: #e4e4e7;
+  color: #18181b;
+}
+
+/* Highlight / Achievement Badges */
+.badge-award {
+  background-color: #fef3c7;
+  color: #92400e;
+  font-size: 0.6875rem;
+  padding: 0.125rem 0.4rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.badge-green {
+  background-color: #ecfdf5;
+  color: #047857;
+  font-size: 0.6875rem;
+  padding: 0.125rem 0.4rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+}
+
+/* Skill Groupings */
+.skill-category {
+  margin-bottom: 0.875rem;
+}
+
+.skill-category:last-child {
+  margin-bottom: 0;
+}
+
+.skill-label {
+  display: block;
+  font-weight: 600;
+  color: #18181b;
+  margin-bottom: 0.25rem;
+  font-size: 0.8125rem;
+}
+
+/* --- Projects Grid --- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.875rem;
+}
+
+@media (min-width: 640px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.project-card {
+  border: 1px solid #e4e4e7;
+  border-radius: 0.5rem;
+  padding: 0.875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.project-card:hover {
+  border-color: #a1a1aa;
+}
+
+.project-header {
+  margin-bottom: 0.375rem;
+}
+
+.project-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.project-title-row h3 {
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+
+.project-link {
+  color: inherit;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+.active-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #10b981; /* emerald-500 active indicator */
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.project-desc {
+  font-size: 0.75rem;
+  color: #52525b;
+  line-height: 1.45;
+  margin-bottom: 0.625rem;
+}
+
+/* Competitive Programming Stats / Profiles */
+.cp-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .cp-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.cp-card {
+  border: 1px solid #e4e4e7;
+  border-radius: 0.375rem;
+  padding: 0.75rem;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: all 0.15s ease;
+}
+
+.cp-card:hover {
+  background-color: #f4f4f5;
+  border-color: #d4d4d8;
+}
+
+.cp-platform {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-bottom: 0.125rem;
+}
+
+.cp-handle {
+  color: #71717a;
+  font-size: 0.75rem;
+}
+
+/* --- Print Stylesheet for PDF Resume (Ctrl+P / Cmd+P) --- */
+@media print {
+  body {
+    font-size: 8.5pt;
+    line-height: 1.35;
+    color: #000000;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .content > * + * {
+    margin-top: 1.125rem;
+  }
+
+  .avatar-wrapper, .social-links, .active-dot {
+    display: none !important;
+  }
+
+  .section h2 {
+    font-size: 11pt;
+    margin-bottom: 0.375rem;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 2px;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+
+  .project-card {
+    padding: 0.5rem;
+    border-color: #d1d5db;
+    page-break-inside: avoid;
+  }
+
+  .tag {
+    font-size: 6.5pt;
+    padding: 0.05rem 0.25rem;
+    background-color: #f3f4f6;
+  }
+
+  .timeline-item {
+    margin-bottom: 0.75rem;
+    page-break-inside: avoid;
+  }
+}
